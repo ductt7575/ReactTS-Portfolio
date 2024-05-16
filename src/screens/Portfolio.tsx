@@ -1,7 +1,7 @@
-import LeftPart from '../components/LeftPart';
-import PreLoader from '../components/Preloader';
-import RightPart from '../components/RightPart';
-import MobileMenu from '../components/mobile/Menu';
+import LeftPart from 'components/LeftPart';
+import PreLoader from 'components/Preloader';
+import RightPart from 'components/RightPart';
+import MobileMenu from 'components/mobile/Menu';
 
 const Portfolio = () => {
   return (

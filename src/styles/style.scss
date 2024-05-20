@@ -404,6 +404,10 @@ img.svg {
               width: 35px;
             }
           }
+
+          &.active {
+            color: $color_3;
+          }
         }
       }
     }
@@ -1061,7 +1065,6 @@ img.svg {
   padding-top: 90px;
   &:last-child {
     padding-bottom: 90px;
-    margin-bottom: 90px;
   }
   .inner_wrap {
     width: 100%;
@@ -1259,7 +1262,7 @@ img.svg {
   clear: both;
   float: left;
   background-color: $background-color_1;
-  margin-bottom: 70px;
+  margin: 100px 0;
   text-align: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2672,7 +2675,7 @@ img.svg {
     height: auto;
     clear: both;
     float: left;
-    padding: 30px 20px;
+    padding: 14px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2832,7 +2835,7 @@ img.svg {
   float: left;
   background-color: $background-color_15;
   padding: 30px 20px;
-  display: none;
+  display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.09);
   border-top: 1px solid rgba(0, 0, 0, 0.09);
   -webkit-box-sizing: border-box;
@@ -2860,6 +2863,10 @@ img.svg {
           font-family: $font-family_2;
           font-weight: 600;
           font-size: 19px;
+
+          &.active {
+            color: $color_3;
+          }
         }
       }
     }

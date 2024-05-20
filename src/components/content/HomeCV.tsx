@@ -1,6 +1,17 @@
 import { TypeAnimation } from 'react-type-animation';
 
 const HomeCV = () => {
+  const handleScrollToAbout = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const section = document.querySelector('#about');
+    if (section)
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest',
+      });
+  };
+
   return (
     <>
       <div className="arlo_tm_section" id="home">
@@ -37,13 +48,21 @@ const HomeCV = () => {
                       speed={50}
                       // style={{ fontSize: '2em', display: 'inline-block' }}
                       repeat={Infinity}
+                      placeholder={undefined}
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
                     />
                   </p>
                 </div>
               </div>
             </div>
             <div className="arlo_tm_arrow_wrap bounce anchor">
-              <a href="#about">
+              <a
+                href="#about"
+                onClick={(e) => {
+                  handleScrollToAbout(e);
+                }}
+              >
                 <i className="xcon-angle-double-down"></i>
               </a>
             </div>

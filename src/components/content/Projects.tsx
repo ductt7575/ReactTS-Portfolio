@@ -184,7 +184,7 @@ const Projects = () => {
                                 handleClickDetail(project);
                               }}
                             >
-                              <BsArrowRight style={{ marginRight: '10px' }} /> Xem chi tiết
+                              <BsArrowRight style={{ marginRight: '10px' }} /> More details
                             </span>
                           </div>
                         </div>

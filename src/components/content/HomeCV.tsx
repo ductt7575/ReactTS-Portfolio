@@ -1,4 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
+import HeroImage from '@/assets/img/hero/img.jpg';
 
 const HomeCV = () => {
   const handleScrollToAbout = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -24,7 +25,7 @@ const HomeCV = () => {
             <div className="content hero">
               <div className="inner_content">
                 <div className="image_wrap">
-                  <img src="img/hero/img.jpg" alt="hero" />
+                  <img src={HeroImage} alt="hero" />
                 </div>
                 <div className="name_holder">
                   <h3>
